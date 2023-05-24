@@ -1,8 +1,7 @@
-import React from 'react'
-import { View, Text, TouchableOpacity, Image } from 'react-native'
+import { View, Text, TouchableOpacity, Image } from "react-native";
 
-import styles from './popularjobcard.style'
-import {checkImageURL} from '../../../../utils'
+import styles from "./popularjobcard.style";
+import { checkImageURL } from "../../../../utils";
 
 const PopularJobCard = ({ item, selectedJob, handleCardPress }) => {
   return (
@@ -21,7 +20,9 @@ const PopularJobCard = ({ item, selectedJob, handleCardPress }) => {
           style={styles.logoImage}
         />
       </TouchableOpacity>
-      <Text style={styles.companyName} numberOfLines={1}>{item.employer_name}</Text>
+      <Text style={styles.companyName} numberOfLines={1}>
+        {item.employer_name}
+      </Text>
 
       <View style={styles.infoContainer}>
         <Text 
